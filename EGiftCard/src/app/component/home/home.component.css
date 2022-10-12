@@ -1,9 +1,11 @@
 .banner
 {
-    background-image: url('../../../assets/images/banner.jpg');
+    background-image: url('../../../assets/images/bg.jpg');
+    background-size: 1400px 600px;
     height: 600px;
     background-position: center top;
-    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
 }
 .content a
 {
@@ -12,7 +14,7 @@
     position: absolute;
     text-decoration: none;
     background-color: white;
-    color:var(--primary-color);
+    color:palevioletred;
     padding: 15px 20px;
     border-radius: 5px;
     margin-top: 20px;
