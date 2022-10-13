@@ -9,25 +9,28 @@ import { FooterComponent } from './component/footer/footer.component';
 import { GiftCardsComponent } from './component/gift-cards/gift-cards.component';
 import { HomeComponent } from './component/home/home.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
-import { SignUpComponent } from './component/sign-up/sign-up.component';
+import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './component/login/login.component';
+import { SignUpComponent } from './component/sign-up/sign-up.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SignUpComponent,
     NavbarComponent,
     FooterComponent,
     HomeComponent,
     GiftCardsComponent,
     AboutComponent,
     ContactComponent,
-    LoginComponent
+    LoginComponent,
+    SignUpComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
