@@ -2,7 +2,7 @@
 .footer
 {
     overflow: hidden;
-    position: sticky;
+    position: relative;
     top: 100%;
     background-color:white;
     padding: 20px 10px;
