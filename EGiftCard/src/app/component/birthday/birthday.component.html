@@ -1,0 +1,41 @@
+<p>birthday works!</p>
+
+
+<div>
+<h3>GiftCard Form</h3>
+</div>
+<table class="table table-bordered">
+<input type="button"  (click)="getCategory()" value="Birthday">
+    <tr *ngIf="giftcard.length > 0">
+
+        
+
+        <th>About GiftCard</th>
+       
+        <th>Category</th>
+
+        <th>BrandList</th>
+        
+
+        <th>GiftCard Name</th>
+    </tr>
+
+    <tr *ngFor="let gift of giftcard">
+      
+      
+
+        
+
+        <td>{{gift.aboutGiftCard}}</td>
+        <td>{{gift.category}}</td>
+        <td>{{gift.brandlist}}</td>
+        <td>{{gift.giftcardName}}</td>
+        
+        
+
+       <!--<td><input type="button" (click)="sendGiftCard(gift.giftCardId)" value="Send" class="btn btn-primary"></td>-->
+
+    </tr>
+
+
+</table>

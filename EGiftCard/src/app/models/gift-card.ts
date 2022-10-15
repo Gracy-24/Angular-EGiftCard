@@ -1,33 +1,51 @@
 export class GiftCard {
-    giftCardId:number;
-    aboutGiftCard:string;
-    brandList:string;
-    giftCardName:string;
-    maxAmount:number;
-    minAmount:number;
-    redemptionDetails:string;
+    aboutGiftCard: string;
+        maxAmount: number;
+        minAmount: number;
+        category: string;
+        giftcardId: number;
+        brandlist: string;
+        giftcardName: string;
+        redemptiondetails:string
 
-    constructor(giftCardId:number,aboutGiftCard:string,
-        brandList:string,
-        giftCardName:string,
-        maxAmount:number,
-        minAmount:number,
-        redemptionDetails:string){
-            this.giftCardId=giftCardId;
+   constructor(aboutGiftCard: string,
+   maxAmount: number,
+   minAmount: number,
+   category: string,
+   giftcardId: number,
+   brandlist: string,
+   giftcardName: string,
+   redemptiondetails:string){
+            
             this.aboutGiftCard=aboutGiftCard;
-            this.brandList=brandList;
-            this.giftCardName=giftCardName;
+            
+            
             this.maxAmount=maxAmount;
             this.minAmount=minAmount;
-            this.redemptionDetails=redemptionDetails
+            this.category=category
+            this.giftcardId=giftcardId;
+            this.brandlist=brandlist;
+            this.giftcardName=giftcardName;
+            this.redemptiondetails=redemptiondetails;
+           
         }
+
+       /* constructor(  giftCardId:number,aboutGiftCard:string,brandList:string,giftCardName:string){
+            this.aboutGiftCard=aboutGiftCard;
+            this.giftCardId=giftCardId;
+            this.brandList=brandList;
+            this.giftCardName=giftCardName
+
+
+        }*/
         toString():string{
-            return  this.giftCardId+'giftCardId'+
+            return  this.giftcardId+'giftCardId'+
             this.aboutGiftCard+'aboutGiftCard'+
-            this.brandList+'brandList'+
-            this.giftCardName+'giftCardName'+
+            this.brandlist+'brandList'+
+            this.giftcardName+'giftCardName'+
             this.maxAmount+'maxAmount'+
             this.minAmount+'minAmount'+
-            this.redemptionDetails+'redemptionDetails'
+            this.redemptiondetails+'redemptionDetails'+
+            this.category+'category'
         }
 }

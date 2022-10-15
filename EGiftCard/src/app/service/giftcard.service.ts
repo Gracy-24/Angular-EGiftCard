@@ -16,4 +16,8 @@ export class GiftcardService {
    getAllGiftCards():Observable<GiftCard[]>{
     return this.http.get<GiftCard[]>("http://localhost:8080/EGiftCardApp/api/GiftCard");
    }
+
+   getGiftCardByCategory(category:string):Observable<GiftCard[]>{
+    return this.http.get<GiftCard[]>(`http://localhost:8080/EGiftCardApp/api/GiftCard/cat/${category}`);
+   }
 }

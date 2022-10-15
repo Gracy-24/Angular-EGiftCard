@@ -9,6 +9,9 @@ import { GiftcardService } from 'src/app/service/giftcard.service';
   styleUrls: ['./gift-cards.component.css']
 })
 export class GiftCardsComponent implements OnInit {
+/*getGiftCardByCategory(arg0: any) {
+throw new Error('Method not implemented.');
+}*/
 
 sendGiftCard(arg0: any) {
 throw new Error('Method not implemented.');
@@ -16,17 +19,19 @@ throw new Error('Method not implemented.');
 
   giftcard:GiftCard[];
  
-  constructor(private service:GiftcardService) { 
+  constructor(private giftservice:GiftcardService) { 
     this.giftcard=new Array();
   }
 
   ngOnInit(): void {
-    this.service.getAllGiftCards()
+    this.giftservice.getAllGiftCards()
     .subscribe(
       data=>{this.giftcard=data},
       err=>{console.log(err)}
     );
 
   }
+
+  
 
 }

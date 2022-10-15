@@ -13,6 +13,7 @@ import { NavbarComponent } from './component/navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './component/login/login.component';
 import { SignUpComponent } from './component/sign-up/sign-up.component';
+import { BirthdayComponent } from './component/birthday/birthday.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { SignUpComponent } from './component/sign-up/sign-up.component';
     ContactComponent,
     LoginComponent,
     SignUpComponent,
-    SignUpComponent
+    SignUpComponent,
+    BirthdayComponent
   ],
   imports: [
     BrowserModule,
